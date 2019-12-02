@@ -20,10 +20,10 @@ Output:
 ![alt text](https://github.com/harshup18/TapChiefAssignment-TapSearch/blob/master/Screenshot%20(102).png?raw=true)
 
 CASE 2: Word is not present in the Document.
-![alt text](https://github.com/harshup18/TapChiefAssignment-TapSearch/blob/master/Screenshot%20(103).png?raw=true)
+![alt text](https://github.com/harshup18/TapChiefAssignment-TapSearch/blob/master/Screenshot%20(104).png?raw=true)
 
 Output:
-![alt text](https://github.com/harshup18/TapChiefAssignment-TapSearch/blob/master/Screenshot%20(104).png?raw=true)
+![alt text](https://github.com/harshup18/TapChiefAssignment-TapSearch/blob/master/Screenshot%20(103).png?raw=true)
 
 
 
