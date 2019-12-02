@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TapChief Assignment</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <style>
+        body 
+        {
+            font-family: 'Muli', sans-serif;
+            width: 100wh;
+            height: 90vh;
+            color: #fff;
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, rgb(125,128,0), rgb(000,0,153));
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 15s ease infinite;
+            animation: Gradient 15s ease infinite;
+        }
+        ul
+        {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            padding: 12px 20px;
+        }
+        select {
+        width: 150px;
+        height: 30px;
+    }
+    </style>
+
+
+</head>
+<body>
+
+        <div class="container" align="center">
+        
+        {% if len != 0 %}
+            <h3> Search Results for the word "{{search_word}}" : </h3>
+        {% else %}
+            <h3> 404! Word Not Found! </h3>
+        {% endif %}
+
+        </div>        
+
+        <div class="container">
+                {% for x in lists %}
+                    <h4><i>Paragraph {{ x }}:</i></h4>
+                    <h4>{{dictionary_paragraph[x]}} </h4>
+                {% endfor %}
+    </div>
+</body>
+</html>
