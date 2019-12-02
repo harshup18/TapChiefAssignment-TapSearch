@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TapChief Assignment</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body 
+        {
+            font-family: 'Muli', sans-serif;
+            width: 100wh;
+            height: 90vh;
+            color: #fff;
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, rgb(125,128,0), rgb(000,0,153));
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 15s ease infinite;
+            animation: Gradient 15s ease infinite;
+        }
+        ul
+        {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            padding: 12px 20px;
+        }
+        select {
+        width: 150px;
+        height: 30px;
+    }
+    </style>
+   <script>
+        function isEmpty(){
+            
+            if(document.getElementById('text_document').value == ""){
+                alert("Please Enter Document!");
+                return false;
+            }
+
+            if(document.getElementById('word_search').value == ""){
+                alert("Please Enter a word to seaarch for!");
+                return false;
+            }
+            
+        }
+    </script>
+
+</head>
+<body>
+
+        <div class="container">
+        <h1 text-align="center">Tap Search App</h1>
+        <form action = "/find" method="post" onsubmit="return isEmpty()">
+
+            <div class="form-group">
+                <textarea placeholder="Document" class="form-control" id="text_document" style="width:600px; height:200px;" name="text_doc" ></textarea>
+
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id = "word_search" style="width: 200px;height: 50px;"aria-describedby="emailHelp" placeholder="Enter a word to search" name="word">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search</button>
+
+        </form>
+        </div>
+
+    <div class="container">
+
+        <form action="/">
+            <div class="form-group">
+                <hr>
+        <button type="submit" class="btn btn-warning" > Clear text </button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
+
+ 
