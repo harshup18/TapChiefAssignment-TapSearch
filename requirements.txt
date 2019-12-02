@@ -9,13 +9,12 @@ defusedxml==0.5.0
 Django==2.2.7
 entrypoints==0.2.3
 Flask==1.0.2
+gunicorn==20.0.4
 image==1.5.27
 ipykernel==5.1.0
 ipython==7.1.1
 ipython-genutils==0.2.0
 ipywidgets==7.4.2
-Flask==1.1.1
-gunicorn==20.0.0
 itsdangerous==1.1.0
 jedi==0.13.1
 Jinja2==2.10
@@ -31,6 +30,7 @@ mistune==0.8.4
 nbconvert==5.4.0
 nbformat==4.4.0
 networkx==2.2
+nltk==3.4
 notebook==5.7.0
 numpy==1.15.4
 pandas==0.23.4
@@ -67,7 +67,3 @@ webencodings==0.5.1
 Werkzeug==0.14.1
 widgetsnbextension==3.4.2
 wordnet==0.0.1b2
-Jinja2==2.10.3
-MarkupSafe==1.1.1
-pkg-resources==0.0.0
-Werkzeug==0.16.0
